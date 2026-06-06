@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif; 
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.header-content {
+    background: radial-gradient(circle, #221c16 0%, #0a0a0a 100%); 
+    padding: 60px 20px;
+    position: relative;
+    border-bottom: 2px solid #d4af37; 
+    text-align: center;
+}
+
+.header-content h1 {
+    font-family: 'Cinzel', serif; 
+    font-size: 3.5rem;
+    font-weight: 600;
+    letter-spacing: 6px;
+    margin-bottom: 5px;
+    text-align: center;
+    background: linear-gradient(135deg, #fff3d1 0%, #d4af37 50%, #aa7c11 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 4px 15px rgba(212, 175, 55, 0.2);
+}
+
+.header-content p {
+    color: #a69f96;
+    font-size: 0.95rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.card {
+    background-color: #fff;
+    width: 280px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card .info {
+    padding: 15px;
+}
+
+.card h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.95rem;         
+    font-weight: 600;           
+    text-transform: uppercase;  
+    letter-spacing: 2px;        
+    color: #b8860b;            
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+
+.card p {
+    font-family: sans-serif;
+    font-size: 0.75rem;          
+    color: #555555;              
+    line-height: 1.5;            
+    text-align: justify;         
+    margin-bottom: 15px;
+    height: 60px;                
+    overflow: hidden;           
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    font-weight: bold;
+    color: #b8860b;
+}
+
+.btn-buy {
+    background-color: #222;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+}
+
+.btn-buy:hover {
+    background-color: #555;
+}
+
+.badge-best {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: linear-gradient(135deg, #d4af37 0%, #b8860b 100%);
+    color: #ffffff;
+    padding: 6px 14px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;   
+    letter-spacing: 1.5px;       
+    border-radius: 50px;         
+    box-shadow: 0 4px 15px rgba(184, 134, 11, 0.4);
+    z-index: 10;
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+}
+
+.contact-info {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.85rem;
+    text-align: center;
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+.contact-info strong {
+    color: #b8860b;
+}
+
+.link-wa {
+    color: #039c40;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link-wa:hover {
+    text-decoration: underline;
+}
+    
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: #fff;
+    margin-top: 40px;
+    font-size: 0.95rem;
+}
+
+
+
+.card {
+    animation: fadeInUp 0.5s ease backwards;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:nth-child(1) { animation-delay: 0.1s; }
+.card:nth-child(2) { animation-delay: 0.2s; }
+.card:nth-child(3) { animation-delay: 0.3s; }
+.card:nth-child(4) { animation-delay: 0.4s; }
+.card:nth-child(5) { animation-delay: 0.5s; }
+.card:nth-child(6) { animation-delay: 0.6s; }
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    transition: transform 0.5s ease;
+}
+
+.card:hover img {
+    transform: scale(1.05);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
